@@ -1,6 +1,6 @@
 import Card from "./Card.jsx";
 
-export default function Cards () {
+export default function CardsInformations () {
     /*
     * TODO:Adicionar animações e parallax
      */
@@ -14,7 +14,7 @@ export default function Cards () {
                     </h1>
                 </div>
                 <div className="z-10">
-                    <Card num={0}></Card>
+                    <Card></Card>
                 </div>
                 <div className="bg-black w-full h-99">
 
