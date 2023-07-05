@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
 import LogoButton from "./components/LogoButton.jsx";
+import Cards from "./components/Cards.jsx";
 
 function App() {
 
@@ -11,7 +12,7 @@ function App() {
             <Hero></Hero>
             <LogoButton></LogoButton>
         </div>
-        Cards
+        <Cards></Cards>
         Noticias
         Outro
         Footer

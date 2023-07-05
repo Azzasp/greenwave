@@ -4,7 +4,7 @@ export default function Slide(){
 
     /*TODO: Separar as funcionalidades das arrows, criar as transições
         e implementar {...}
-    * */
+     */
     const [num, setNum] = useState(0);
 
     const imageURL = [
