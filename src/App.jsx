@@ -1,11 +1,17 @@
-import AcompanharButton from "./components/acompanharButton.jsx";
+import Navbar from "./components/Navbar.jsx";
+import Hero from "./components/Hero.jsx";
 
 function App() {
 
   return (
     <>
-        <h1 className="text-red-600 text-9xl font-bold">Hello World</h1>
-        <AcompanharButton></AcompanharButton>
+        <Navbar></Navbar>
+        <Hero></Hero>
+        LogoButton
+        Cards
+        Noticias
+        Outro
+        Footer
     </>
   )
 }
