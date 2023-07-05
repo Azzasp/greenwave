@@ -21,7 +21,12 @@ export default function Slide(){
 
     return(
         <>
-            <div onClick={handleClick} style={{backgroundImage: `url(${imageURL.at(num)})`}} className="w-screen h-screen bg-cover bg-no-repeat ${imageURL[num]}}"></div>
+            <div onClick={handleClick} style={{backgroundImage: `url(${imageURL.at(num)})`}}
+                 className="w-screen h-screen bg-cover bg-no-repeat
+
+                 ">
+
+            </div>
 
         </>
     )
