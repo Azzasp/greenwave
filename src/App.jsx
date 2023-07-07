@@ -4,6 +4,7 @@ import LogoButton from "./components/LogoButton.jsx";
 import CardsInformations from "./components/CardsInformations.jsx";
 import Noticias from "./components/Noticias.jsx";
 import Outro from "./components/Outro.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
 
@@ -16,8 +17,8 @@ function App() {
             <CardsInformations></CardsInformations>
             <Noticias></Noticias>
             <Outro></Outro>
+            <Footer></Footer>
         </div>
-        Footer
     </>
   )
 }
