@@ -8,14 +8,14 @@ export default {
       },
       width: {
         '100': '120rem',
-        'card-even': '350px',
-        'card-odd': '380px',
+        'card-even': '320px',
+        'card-odd': '350px',
       },
       height:{
         '100': '67.5rem',
         '99': '34rem',
-        'card-even': '540px',
-        'card-odd': '640px',
+        'card-even': '460px',
+        'card-odd': '540px',
       }
     },
   },
