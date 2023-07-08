@@ -11,19 +11,29 @@ function App() {
 
   return (
     <>
-        <div className="mx-auto">
-
-            <Parallax pages={5} style={{top: '0', left: '0' }}>
-                <ParallaxLayer offset={0} speed={2.5}>
-                    <Navbar></Navbar>
-                    <Hero></Hero>
-                    <CardsInformations></CardsInformations>
-                    <a href="/#"><LogoButton></LogoButton></a>
+        <div>
+            <a href="/#"><LogoButton></LogoButton></a>
+            <Parallax pages={3.45} style={{top: '0', left: '0' }}>
+                <ParallaxLayer offset={0} speed={0.5}>
+                    <div>
+                        <Navbar></Navbar>
+                        <Hero></Hero>
+                    </div>
+                </ParallaxLayer>
+                <ParallaxLayer offset={1} speed={0.1}>
                     <Noticias></Noticias>
+                </ParallaxLayer>
+
+                <ParallaxLayer offset={0.9999} speed={0.75}>
+                    <CardsInformations></CardsInformations>
+                </ParallaxLayer>
+
+                <ParallaxLayer offset={2.2} speed={0.50}>
                     <Outro></Outro>
                     <Footer></Footer>
                 </ParallaxLayer>
             </Parallax>
+
         </div>
     </>
   )
