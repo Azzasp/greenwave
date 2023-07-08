@@ -13,7 +13,7 @@ function App() {
         <Navbar></Navbar>
         <div className="mx-auto">
             <Hero></Hero>
-            <LogoButton></LogoButton>
+            <a href="/#"><LogoButton></LogoButton></a>
             <CardsInformations></CardsInformations>
             <Noticias></Noticias>
             <Outro></Outro>

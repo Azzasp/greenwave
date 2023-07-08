@@ -16,9 +16,7 @@ export default function CardsInformations () {
                 <div className="z-10">
                     <Card></Card>
                 </div>
-                <div className="bg-black w-full h-99">
-
-                </div>
+                <div className="bg-black w-full h-99"></div>
             </div>
         </>
     )

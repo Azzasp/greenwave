@@ -8,7 +8,7 @@ export default function Footer(){
 
     return(
         <>
-            <div className={`w-full h-[250px] bg-black flex justify-evenly items-center`}>
+            <div className={`w-full h-[250px] bg-black flex justify-between items-center`}>
                 <h1 className={`text-white text-xl font-semibold`}> Green<span className={`text-green-500`}>Wave</span></h1>
 
                 <p className={`text-white text-center mt-28`}>© GreenWave. All rights reserved. Protecting the environment one wave at a time.</p>
