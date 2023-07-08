@@ -5,19 +5,25 @@ import CardsInformations from "./components/CardsInformations.jsx";
 import Noticias from "./components/Noticias.jsx";
 import Outro from "./components/Outro.jsx";
 import Footer from "./components/Footer.jsx";
+import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
 function App() {
 
   return (
     <>
-        <Navbar></Navbar>
         <div className="mx-auto">
-            <Hero></Hero>
-            <a href="/#"><LogoButton></LogoButton></a>
-            <CardsInformations></CardsInformations>
-            <Noticias></Noticias>
-            <Outro></Outro>
-            <Footer></Footer>
+
+            <Parallax pages={5} style={{top: '0', left: '0' }}>
+                <ParallaxLayer offset={0} speed={2.5}>
+                    <Navbar></Navbar>
+                    <Hero></Hero>
+                    <CardsInformations></CardsInformations>
+                    <a href="/#"><LogoButton></LogoButton></a>
+                    <Noticias></Noticias>
+                    <Outro></Outro>
+                    <Footer></Footer>
+                </ParallaxLayer>
+            </Parallax>
         </div>
     </>
   )
