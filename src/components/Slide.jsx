@@ -14,7 +14,7 @@ const ods15 = {
 }
 
 const ods14 = {
-    title: 'VIDA DEBAIXO DA\n + AGUA',
+    title: 'VIDA DEBAIXO DA ' + 'AGUA',
     text: 'Podemos proteger nossos oceanos e mares.\n' +
         'A ODS 14 busca conservar e utilizar de forma sustentável\n' +
         'os recursos marinhos, promovendo a vida na água.\n' +
@@ -68,7 +68,7 @@ export default function Slide(){
 
     return(
         <>
-            <div className={`absolute w-full top-1/2 px-10
+            <div className={`absolute w-full top-1/2 px-10 z-50
                             flex justify-between justify-items-center`}>
                 <div onClick={downClick} style={{backgroundImage: `url(${iconURL.at(1)})`}}
                         className={`w-[25px] h-[25px] bg-cover bg-no-repeat bg-center left-0`}></div>
@@ -76,11 +76,22 @@ export default function Slide(){
                         className={`w-[25px] h-[25px] bg-cover bg-no-repeat bg-center right-0`}></div>
             </div>
             <div>
-                <h1><span>TERRA</span></h1>
+                <h1>{imageList.at(num)
+                    .title}</h1>
             </div>
-            <div style={{backgroundImage: `url(${imageList.at(num)
-                                                .imageURL.at(1)})`}}
-                 className="w-screen h-screen bg-cover bg-no-repeat">
+            <div>
+                <div style={{backgroundImage: `url(${imageList.at(num)
+                        .imageURL.at(0)})`}}
+                     className=" absolute w-screen h-screen bg-cover bg-no-repeat">
+                </div>
+                <div style={{backgroundImage: `url(${imageList.at(num)
+                        .imageURL.at(1)})`}}
+                     className="absolute w-screen h-screen bg-cover bg-no-repeat">
+                </div>
+                <div style={{backgroundImage: `url(${imageList.at(num)
+                        .imageURL.at(2)})`}}
+                     className="absolute w-screen h-screen bg-cover bg-no-repeat">
+                </div>
             </div>
 
         </>
