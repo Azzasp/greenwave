@@ -26,7 +26,7 @@ export default function Noticias(){
                                 esfregando-as suavemente entre os dedos.</p>
                         </span>
                     </div>
-                    <div className="flex justify-center items-center mt-20">
+                    <div className="flex justify-center items-center mt-7">
                         <div style={{backgroundImage: `url(${imageURL.at(1)})`}}
                              className="w-48 h-48 bg-cover bg-no-repeat bg-center"></div>
 
@@ -39,7 +39,7 @@ export default function Noticias(){
                                 que apontam para um desequilíbrio ambiental.</p>
                         </span>
                     </div>
-                    <div className="flex justify-center items-center mt-20">
+                    <div className="flex justify-center items-center mt-7">
                         <div style={{backgroundImage: `url(${imageURL.at(0)})`}}
                              className="w-48 h-48 bg-cover bg-no-repeat bg-center"></div>
 

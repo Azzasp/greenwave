@@ -1,9 +1,11 @@
 import {useState} from "react";
 
+
 export default function Slide(){
 
     /*TODO: criar as transições e implementar {...}
      */
+
     const [num, setNum] = useState(0);
 
     const imageURL = [
