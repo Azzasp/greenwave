@@ -2,13 +2,13 @@
 export default function Footer(){
 
     const imageURL = [
-        './src/assets/icons/github.png',
-        './src/assets/icons/linkedin.png'
+        './src/assets/icons/awesome-github.svg',
+        './src/assets/icons/awesome-linkedin.svg'
     ]
 
     return(
         <>
-            <div className={`w-full h-[250px] bg-black flex justify-between items-center`}>
+            <div className={`w-full h-[250px] bg-black flex justify-between items-center px-24`}>
                 <h1 className={`text-white text-xl font-semibold`}> Green<span className={`text-green-500`}>Wave</span></h1>
 
                 <p className={`text-white text-center mt-28`}>© GreenWave. All rights reserved. Protecting the environment one wave at a time.</p>
