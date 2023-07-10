@@ -9,6 +9,16 @@ export default function Outro(){
 
     const [email, setEmail] = useState('');
 
+    const handleEmailChange = (event) => {
+        setEmail(event.target.value);
+    };
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        console.log(email); // Implementar envio de email
+        setEmail(''); // Limpar o valor do email após o envio.
+    };
+
     return (
         <>
             <div>
@@ -18,14 +28,21 @@ export default function Outro(){
                                         w-full h-screen opacity-30 absolute"></div>
                     <div className="absolute flex flex-col justify-center items-center h-screen w-full">
                         <h1 className="text-white text-5xl font-bold">Junte-se a nós!</h1>
-                        <div>
-                            <input type="email" placeholder='Insira seu Email'
+                        <form>
+                            <input type="email" placeholder='Insira seu Email' value={email} onChange={handleEmailChange}
                                     className={`w-[600px] h-12 mt-10 
                                                 outline outline-3 outline-white rounded-xl placeholder-white
                                                 bg-transparent text-white text-center`}>
                             </input>
-                        </div>
-                        <div className="mt-10"><AcompanharButton></AcompanharButton></div>
+                            <div className="mt-10">
+                                <button type="submit"
+                                    className="h-8 w-36 outline outline-2 outline-green-500 rounded
+                                    font-semibold text-white
+                                    hover:bg-green-500 hover:text-white transition-colors">
+                                    Cadastrar
+                                </button>
+                            </div>
+                        </form>
 
                         <p className="text-white text-center mt-10">Na luta contra as mudanças climáticas e na proteção do nosso planeta cada ação conta. <br></br>
                             Assuma o compromisso de reduzir sua pegada de carbono, adotar práticas sustentáveis e<br></br>

@@ -89,11 +89,14 @@ export default function Slide(){
                 </p>
             </div>
             <div className={`flex justify-center absolute top-[35rem] left-[37rem]`}>
-                <button className="z-30 h-8 w-36 outline outline-2 outline-white rounded-2xl
+                <a href="#cards" className={`z-30`}>
+                    <button onClick="#cards" className="h-8 w-36 outline outline-2 outline-white rounded-2xl
                                 font-semibold text-white
                                 hover:bg-white hover:text-black transition-colors">
-                    EXPLORAR
-                </button>
+                        EXPLORAR
+                    </button>
+                </a>
+
             </div>
             <div>
                 <div className={`h-screen w-screen bg-black absolute z-10 opacity-40`}></div>

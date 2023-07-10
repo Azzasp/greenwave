@@ -5,7 +5,6 @@ import Noticias from "./components/Noticias.jsx";
 import Outro from "./components/Outro.jsx";
 import Footer from "./components/Footer.jsx";
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-import { Link } from 'react-scroll'
 
 function App() {
 
@@ -14,7 +13,7 @@ function App() {
         <div>
             <Parallax pages={3.45} style={{top: '0', left: '0' }}>
                 <ParallaxLayer offset={0} speed={0.5}>
-                    <a href="#outro"><Navbar></Navbar></a>
+                    <Navbar></Navbar>
                     <Hero></Hero>
                 </ParallaxLayer>
                 <ParallaxLayer offset={1} speed={0.1}>
@@ -22,7 +21,7 @@ function App() {
                 </ParallaxLayer>
 
                 <ParallaxLayer offset={0.9999} speed={0.75}>
-                    <CardsInformations></CardsInformations>
+                    <div id="cards"><CardsInformations></CardsInformations></div>
                 </ParallaxLayer>
 
                 <ParallaxLayer offset={2.2} speed={0.50}>
