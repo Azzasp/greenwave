@@ -1,6 +1,5 @@
 import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
-import LogoButton from "./components/LogoButton.jsx";
 import CardsInformations from "./components/CardsInformations.jsx";
 import Noticias from "./components/Noticias.jsx";
 import Outro from "./components/Outro.jsx";
@@ -12,10 +11,9 @@ function App() {
   return (
     <>
         <div>
-            {/*<a href="/#" className={`z-[9]`}><LogoButton></LogoButton></a>*/}
             <Parallax pages={3.45} style={{top: '0', left: '0' }}>
                 <ParallaxLayer offset={0} speed={0.5}>
-                    <Navbar></Navbar>
+                    <a href="#outro"><Navbar></Navbar></a>
                     <Hero></Hero>
                 </ParallaxLayer>
                 <ParallaxLayer offset={1} speed={0.1}>
@@ -27,8 +25,8 @@ function App() {
                 </ParallaxLayer>
 
                 <ParallaxLayer offset={2.2} speed={0.50}>
-                    <Outro></Outro>
-                    <Footer></Footer>
+                    <div id="outro"><Outro></Outro></div>
+                   <Footer></Footer>
                 </ParallaxLayer>
             </Parallax>
 

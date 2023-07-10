@@ -29,6 +29,7 @@ const ods13 = {
 export default function Slide(){
 
     const [num, setNum] = useState(0);
+    const [index, setIndex] = useState(num)
 
     const imageList = [
         ods13, ods14, ods15
@@ -40,17 +41,19 @@ export default function Slide(){
     function upClick(){
         if(num > imageList.length -2) setNum(0);
         else setNum(num + 1);
+        setIndex(num)
     }
     function downClick(){
         if(num === 0) setNum(imageList.length - 1);
         else setNum(num - 1);
+        setIndex(num);
     }
 
     const slideTransition = useTransition(imageList[num], {
-        from: {opacity: 0, transform: 'scale(1.1)'},
-        enter: {opacity: 1, transform: 'scale(1)'},
-        leave: {opacity: 0, transform: 'scale(0.85)'},
-        config: {duration: 150},
+        from: {opacity: 1,transform: `translate(${num > index ? num > imageList.length -2 ? '-100%' : '100%'  : num === 0 ? '100%' : '-100%'}, 0)`},
+        enter: {opacity: 1, transform: 'translate(0, 0)'},
+        leave: {opacity: 1, transform: 'translate(-100%, 0)'},
+        config: {duration: 550},
     })
 
     return(
@@ -91,10 +94,11 @@ export default function Slide(){
                     <animated.div
                         style={{
                             ...style,
-                            backgroundImage: `url(${item.imageURL})`
+                            backgroundImage: `url(${item.imageURL})`,
                         }}
                         className="absolute w-screen h-screen bg-cover bg-no-repeat"
                     />
+
                 ))}
             </div>
 
