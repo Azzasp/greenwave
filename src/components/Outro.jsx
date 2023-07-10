@@ -1,4 +1,3 @@
-import AcompanharButton from "./acompanharButton.jsx";
 import {useState} from "react";
 
 export default function Outro(){
@@ -34,7 +33,7 @@ export default function Outro(){
                                                 outline outline-3 outline-white rounded-xl placeholder-white
                                                 bg-transparent text-white text-center`}>
                             </input>
-                            <div className="mt-10">
+                            <div className="mt-10 ml-56">
                                 <button type="submit"
                                     className="h-8 w-36 outline outline-2 outline-green-500 rounded
                                     font-semibold text-white
