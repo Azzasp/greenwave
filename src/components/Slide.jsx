@@ -1,7 +1,7 @@
 import {useState} from "react";
 
 const ods15 = {
-    title: 'VIDA SOBRE A TERRA',
+    title: 'VIDA SOBRE \n' + 'A TERRA',
     text: ' Juntos, podemos proteger a vida em nosso planeta.\n' +
         'A ODS 15 busca preservar os ecossistemas terrestres, combater a\n' +
         'desertificação e a degradação do solo, e promover a conservação da biodiversidade.\n' +
@@ -14,7 +14,7 @@ const ods15 = {
 }
 
 const ods14 = {
-    title: 'VIDA DEBAIXO DA ' + 'AGUA',
+    title: 'VIDA DEBAIXO \n' + 'DA AGUA',
     text: 'Podemos proteger nossos oceanos e mares.\n' +
         'A ODS 14 busca conservar e utilizar de forma sustentável\n' +
         'os recursos marinhos, promovendo a vida na água.\n' +
@@ -27,7 +27,7 @@ const ods14 = {
 }
 
 const ods13 = {
-    title: 'COMBATE\n' + 'AS ALTERAÇÕES CLIMATICAS',
+    title: 'COMBATE AS' + '\n ALTERAÇÕES CLIMATICAS',
     text: 'Juntos, podemos enfrentar o desafio climático.\n' +
             'A ODS 13 busca combater as mudanças climáticas e seus impactos,\n' +
             'promovendo medidas urgentes para preservar nosso planeta.\n' +
@@ -75,9 +75,28 @@ export default function Slide(){
                 <div onClick={upClick} style={{backgroundImage: `url(${iconURL.at(0)})`}}
                         className={`w-[25px] h-[25px] bg-cover bg-no-repeat bg-center right-0`}></div>
             </div>
+            <div className={`flex justify-center items-center`}>
+                <h1 className={`text-white text-5xl font-bold text-center
+                                absolute z-50 mt-[40rem]
+                                `}>
+                    {imageList.at(num).title.split('\n').map((substring, index) => (
+                        <span key={index}>
+                            {substring}
+                            <br/>
+                        </span>
+                    ))}
+                </h1>
+            </div>
             <div>
-                <h1>{imageList.at(num)
-                    .title}</h1>
+                <p className={`text-white text-left
+                                absolute z-40 top-[28rem] left-10`}>
+                    {imageList.at(num).text.split('\n').map((substring, index) => (
+                        <span key={index}>
+                            {substring}
+                            <br />
+                        </span>
+                    ))}
+                </p>
             </div>
             <div>
                 <div style={{backgroundImage: `url(${imageList.at(num)
