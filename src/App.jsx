@@ -12,13 +12,11 @@ function App() {
   return (
     <>
         <div>
-            <a href="/#"><LogoButton></LogoButton></a>
+            <a href="/#" className={`z-[9]`}><LogoButton></LogoButton></a>
             <Parallax pages={3.45} style={{top: '0', left: '0' }}>
                 <ParallaxLayer offset={0} speed={0.5}>
-                    <div>
-                        <Navbar></Navbar>
-                        <Hero></Hero>
-                    </div>
+                    <Navbar></Navbar>
+                    <Hero></Hero>
                 </ParallaxLayer>
                 <ParallaxLayer offset={1} speed={0.1}>
                     <Noticias></Noticias>

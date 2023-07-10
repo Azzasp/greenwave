@@ -9,7 +9,7 @@ export default function Noticias(){
 
     return(
         <>
-            <div className={`mt-40`}>
+            <div className={`mt-40 z-[7]`}>
                 <h1 className="text-black text-5xl font-semibold flex justify-center">Noticias</h1>
                 <div>
                     <div className="flex justify-center items-center mt-24">

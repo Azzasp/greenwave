@@ -8,8 +8,8 @@ export default function LogoButton(){
 
     return(
         <>
-            <div className="z-20 inline-block end-0 bottom-6 right-6 fixed
-                            drop-shadow-xl">
+            <div className={`inline-block end-0 bottom-6 right-6 fixed
+                            drop-shadow-xl`}>
 
                 <div className="w-16 h-16 rounded-full bg-black">
                     <h1 className={`text-white text-2xl font-bold

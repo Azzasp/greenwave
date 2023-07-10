@@ -6,60 +6,40 @@ const ods15 = {
         'A ODS 15 busca preservar os ecossistemas terrestres, combater a\n' +
         'desertificação e a degradação do solo, e promover a conservação da biodiversidade.\n' +
         'É hora de agir!',
-    imageURL: [
-        './src/assets/ods_imgs/ods_15/sky.png',
-        './src/assets/ods_imgs/ods_15/lake.png',
-        './src/assets/ods_imgs/ods_15/terrain.png'
-    ]
+    imageURL: './src/assets/ods_imgs/ods_15/ods15.png'
 }
-
 const ods14 = {
     title: 'VIDA DEBAIXO \n' + 'DA AGUA',
     text: 'Podemos proteger nossos oceanos e mares.\n' +
         'A ODS 14 busca conservar e utilizar de forma sustentável\n' +
         'os recursos marinhos, promovendo a vida na água.\n' +
         'É hora de agir!',
-    imageURL: [
-        './src/assets/ods_imgs/ods_14/coral.png',
-        './src/assets/ods_imgs/ods_14/ocean.png',
-        './src/assets/ods_imgs/ods_14/fishes.png'
-    ]
+    imageURL: './src/assets/ods_imgs/ods_14/ods14.png'
 }
-
 const ods13 = {
     title: 'COMBATE AS' + '\n ALTERAÇÕES CLIMATICAS',
     text: 'Juntos, podemos enfrentar o desafio climático.\n' +
             'A ODS 13 busca combater as mudanças climáticas e seus impactos,\n' +
             'promovendo medidas urgentes para preservar nosso planeta.\n' +
             'É hora de agir!',
-    imageURL: [
-        './src/assets/ods_imgs/ods_13/ice.png',
-        './src/assets/ods_imgs/ods_13/mountain.png',
-        './src/assets/ods_imgs/ods_13/animals.png'
-    ]
+    imageURL: './src/assets/ods_imgs/ods_13/ods13.png'
 }
 
 export default function Slide(){
-
-    /*TODO: criar as transições e implementar {...}
-     */
 
     const [num, setNum] = useState(0);
 
     const imageList = [
         ods13, ods14, ods15
     ]
-
     const iconURL = [
         './src/assets/icons/right.svg',
         './src/assets/icons/left.svg'
     ]
-
     function upClick(){
         if(num > imageList.length -2) setNum(0);
         else setNum(num + 1);
     }
-
     function downClick(){
         if(num === 0) setNum(imageList.length - 1);
         else setNum(num - 1);
@@ -99,17 +79,9 @@ export default function Slide(){
                 </p>
             </div>
             <div>
-                <div style={{backgroundImage: `url(${imageList.at(num)
-                        .imageURL.at(0)})`}}
+                <div className={`h-screen w-screen bg-black absolute z-10 opacity-40`}></div>
+                <div style={{backgroundImage: `url(${imageList.at(num).imageURL})`}}
                      className=" absolute w-screen h-screen bg-cover bg-no-repeat">
-                </div>
-                <div style={{backgroundImage: `url(${imageList.at(num)
-                        .imageURL.at(1)})`}}
-                     className="absolute w-screen h-screen bg-cover bg-no-repeat">
-                </div>
-                <div style={{backgroundImage: `url(${imageList.at(num)
-                        .imageURL.at(2)})`}}
-                     className="absolute w-screen h-screen bg-cover bg-no-repeat">
                 </div>
             </div>
 

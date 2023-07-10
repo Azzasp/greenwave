@@ -2,7 +2,7 @@ import Card from "./Card.jsx";
 
 export default function CardsInformations () {
     /*
-    * TODO:Adicionar animações e parallax
+    * TODO:Adicionar animações
      */
     return(
         <>
@@ -13,7 +13,7 @@ export default function CardsInformations () {
                         Parceria pela <span className="text-green-500"> Sustentabilidade!</span>
                     </h1>
                 </div>
-                <div className="z-10">
+                <div className={`z-[8]`}>
                     <Card></Card>
                 </div>
                 <div className="bg-black w-full h-99"></div>
