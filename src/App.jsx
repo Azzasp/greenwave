@@ -5,6 +5,7 @@ import Noticias from "./components/Noticias.jsx";
 import Outro from "./components/Outro.jsx";
 import Footer from "./components/Footer.jsx";
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+import { Link } from 'react-scroll'
 
 function App() {
 

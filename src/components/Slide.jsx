@@ -66,7 +66,7 @@ export default function Slide(){
                         className={`w-[25px] h-[25px] bg-cover bg-no-repeat bg-center right-0`}></div>
             </div>
             <div className={`flex justify-center items-center`}>
-                <h1 className={`text-white text-5xl font-bold text-center
+                <h1 className={`text-white text-7xl font-bold text-center
                                 absolute z-50 mt-[40rem]
                                 `}>
                     {imageList.at(num).title.split('\n').map((substring, index) => (
@@ -87,6 +87,13 @@ export default function Slide(){
                         </span>
                     ))}
                 </p>
+            </div>
+            <div className={`flex justify-center absolute top-[35rem] left-[37rem]`}>
+                <button className="z-30 h-8 w-36 outline outline-2 outline-white rounded-2xl
+                                font-semibold text-white
+                                hover:bg-white hover:text-black transition-colors">
+                    EXPLORAR
+                </button>
             </div>
             <div>
                 <div className={`h-screen w-screen bg-black absolute z-10 opacity-40`}></div>
