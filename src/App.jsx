@@ -12,7 +12,7 @@ function App() {
   return (
     <>
         <div>
-            <a href="/#" className={`z-[9]`}><LogoButton></LogoButton></a>
+            {/*<a href="/#" className={`z-[9]`}><LogoButton></LogoButton></a>*/}
             <Parallax pages={3.45} style={{top: '0', left: '0' }}>
                 <ParallaxLayer offset={0} speed={0.5}>
                     <Navbar></Navbar>

@@ -1,4 +1,5 @@
 import {useState} from "react";
+import {useTransition, animated} from "@react-spring/web";
 
 const ods15 = {
     title: 'VIDA SOBRE \n' + 'A TERRA',
@@ -45,6 +46,12 @@ export default function Slide(){
         else setNum(num - 1);
     }
 
+    const slideTransition = useTransition(imageList[num], {
+        from: {opacity: 0, transform: 'scale(1.1)'},
+        enter: {opacity: 1, transform: 'scale(1)'},
+        leave: {opacity: 0, transform: 'scale(0.85)'},
+        config: {duration: 150},
+    })
 
     return(
         <>
@@ -80,9 +87,15 @@ export default function Slide(){
             </div>
             <div>
                 <div className={`h-screen w-screen bg-black absolute z-10 opacity-40`}></div>
-                <div style={{backgroundImage: `url(${imageList.at(num).imageURL})`}}
-                     className=" absolute w-screen h-screen bg-cover bg-no-repeat">
-                </div>
+                {slideTransition((style, item) => (
+                    <animated.div
+                        style={{
+                            ...style,
+                            backgroundImage: `url(${item.imageURL})`
+                        }}
+                        className="absolute w-screen h-screen bg-cover bg-no-repeat"
+                    />
+                ))}
             </div>
 
         </>
