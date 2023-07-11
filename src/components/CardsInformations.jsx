@@ -9,7 +9,8 @@ export default function CardsInformations () {
 
             <div className="relative">
                 <div className="flex justify-center">
-                    <h1 className=" z-20 text-white text-5xl font-semibold absolute pt-4">
+                    <h1 className={`z-20 text-white text-5xl font-semibold absolute pt-4
+                                    sm:text-center`}>
                         Parceria pela <span className="text-green-500"> Sustentabilidade!</span>
                     </h1>
                 </div>

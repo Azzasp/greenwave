@@ -13,13 +13,20 @@ export default function Card(){
 
     return (
         <>
-            <div className="mt-16 w-full h-screen flex justify-center items-center absolute">
-                    <a href={'https://www.socioambiental.org/'} target={'_blank'} rel={'noreferrer'}>
+            <div className={`w-full h-screen flex justify-center items-center absolute
+                             md:-mt-[10rem] md:overflow-x-scroll
+                             sm:-mt-[10rem] sm:overflow-x-scroll
+                             xl:mt-[10rem] xl:overflow-x-hidden
+                             2xl:-mt-[15rem]`}>
 
-                        <div className={`group`}>
-                            <div className={`mt-52 absolute flex flex-col
-                                            ml-5
-                                            group-hover:z-20 opacity-0 group-hover:opacity-100 transition-opacity `}>
+                    <div className={`group
+                                        sm:ml-[40rem]
+                                        md:ml-[32rem]
+                                        lg:ml-[20rem]
+                                        xl:ml-[0]`}>
+                        <a href={'https://www.socioambiental.org/'} target={'_blank'} rel={'noreferrer'}>
+                            <div className={`mt-52 absolute flex flex-col ml-5
+                                            group-hover:z-20 opacity-0 group-hover:opacity-100 transition-opacity`}>
                                 <h1 className={`text-center text-white text-2xl font-semibold`}>Instituto Social Ambiental<br></br>(ISA)</h1>
                                 <a href={'https://www.socioambiental.org/'} target={'_blank'} rel={'noreferrer'}
                                    className={`flex justify-center items-center mt-4 group-hover:opacity-100`}><AcompanharButton title="Saiba Mais"></AcompanharButton></a>
@@ -29,8 +36,8 @@ export default function Card(){
                                  className={`w-card-even h-card-even bg-cover bg-no-repeat bg-center z-50 drop-shadow-2xl
                                             group-hover:opacity-40 transition-opacity`}>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
 
 
 

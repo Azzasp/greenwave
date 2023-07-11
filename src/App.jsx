@@ -11,7 +11,7 @@ function App() {
   return (
     <>
         <div>
-            <Parallax pages={3.45} style={{top: '0', left: '0' }}>
+            <Parallax pages={3.36} style={{top: '0', left: '0' }}>
                 <ParallaxLayer offset={0} speed={0.5}>
                     <Navbar></Navbar>
                     <Hero></Hero>
