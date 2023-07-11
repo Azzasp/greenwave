@@ -109,7 +109,7 @@ export default function Slide(){
                             ...style,
                             backgroundImage: `url(${item.imageURL})`,
                         }}
-                        className="absolute w-screen h-screen bg-cover bg-no-repeat"
+                        className={`absolute w-screen h-screen bg-cover bg-no-repeat bg-center`}
                     />
 
                 ))}
