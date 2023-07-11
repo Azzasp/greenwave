@@ -60,7 +60,7 @@ export default function Slide(){
         <>
             <div className={`absolute w-full top-1/2 px-10 z-50
                             flex justify-between justify-items-center
-                            sm:`}>
+                            `}>
                 <div onClick={downClick} style={{backgroundImage: `url(${iconURL.at(1)})`}}
                         className={`w-[25px] h-[25px] bg-cover bg-no-repeat bg-center left-0`}></div>
                 <div onClick={upClick} style={{backgroundImage: `url(${iconURL.at(0)})`}}
@@ -68,8 +68,9 @@ export default function Slide(){
             </div>
             <div className={`flex justify-center items-center`}>
                 <h1 className={`text-white text-7xl font-bold text-center
-                                absolute z-50 mt-[40rem]
-                                sm:text-4xl sm:mt-[80rem]`}>
+                                absolute z-50
+                                sm:text-4xl sm:mt-[80rem]
+                                xl:mt-[40rem]`}>
                     {imageList.at(num).title.split('\n').map((substring, index) => (
                         <span key={index}>
                             {substring}
@@ -80,8 +81,9 @@ export default function Slide(){
             </div>
             <div>
                 <p className={`text-white text-left
-                                absolute z-40 top-[28rem] left-10
-                                sm:top-[50rem]`}>
+                                absolute z-40 left-10
+                                sm:top-[50rem]
+                                xl:top-[28rem]`}>
                     {imageList.at(num).text.split('\n').map((substring, index) => (
                         <span key={index}>
                             {substring}
@@ -90,8 +92,12 @@ export default function Slide(){
                     ))}
                 </p>
             </div>
-            <div className={`flex justify-center absolute top-[35rem] left-[37rem]
-                            sm:left-[16rem] sm:top-[60rem]`}>
+            <div className={`flex justify-center absolute  left-[37rem]
+                            sm:left-[16rem] sm:top-[60rem]
+                            md:left-[19rem]
+                            lg:left-[27rem]
+                            xl:top-[35rem] xl:left-[37rem]
+                            2xl:left-[42.5rem]`}>
                 <a href="#cards" className={`z-30`}>
                     <button onClick="#cards" className="h-8 w-36 outline outline-2 outline-white rounded-2xl
                                 font-semibold text-white

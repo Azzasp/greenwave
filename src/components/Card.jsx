@@ -13,13 +13,17 @@ export default function Card(){
 
     return (
         <>
-            <div className={`mt-16 w-full h-screen flex justify-center items-center absolute
+            <div className={`w-full h-screen flex justify-center items-center absolute
                              md:-mt-[10rem] md:overflow-x-scroll
-                             sm:-mt-[10rem] sm:overflow-x-scroll`}>
+                             sm:-mt-[10rem] sm:overflow-x-scroll
+                             xl:mt-[10rem] xl:overflow-x-hidden
+                             2xl:-mt-[15rem]`}>
 
                     <div className={`group
-                                        md:ml-[40rem]
-                                        sm:ml-[40rem]`}>
+                                        sm:ml-[40rem]
+                                        md:ml-[32rem]
+                                        lg:ml-[20rem]
+                                        xl:ml-[0]`}>
                         <a href={'https://www.socioambiental.org/'} target={'_blank'} rel={'noreferrer'}>
                             <div className={`mt-52 absolute flex flex-col ml-5
                                             group-hover:z-20 opacity-0 group-hover:opacity-100 transition-opacity`}>
