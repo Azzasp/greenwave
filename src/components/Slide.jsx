@@ -7,7 +7,7 @@ const ods15 = {
         'A ODS 15 busca preservar os ecossistemas terrestres, combater a\n' +
         'desertificação e a degradação do solo, e promover a conservação da biodiversidade.\n' +
         'É hora de agir!',
-    imageURL: './src/assets/ods_imgs/ods_15/ods15.png'
+    imageURL: '/assets/src/assets/ods_imgs/ods_15/ods15.png'
 }
 const ods14 = {
     title: 'VIDA DEBAIXO \n' + 'DA AGUA',
@@ -15,7 +15,7 @@ const ods14 = {
         'A ODS 14 busca conservar e utilizar de forma sustentável\n' +
         'os recursos marinhos, promovendo a vida na água.\n' +
         'É hora de agir!',
-    imageURL: './src/assets/ods_imgs/ods_14/ods14.png'
+    imageURL: '/assets/src/assets/ods_imgs/ods_14/ods14.png'
 }
 const ods13 = {
     title: 'COMBATE AS' + '\n ALTERAÇÕES CLIMATICAS',
@@ -23,7 +23,7 @@ const ods13 = {
             'A ODS 13 busca combater as mudanças climáticas e seus impactos,\n' +
             'promovendo medidas urgentes para preservar nosso planeta.\n' +
             'É hora de agir!',
-    imageURL: './src/assets/ods_imgs/ods_13/ods13.png'
+    imageURL: '/assets/src/assets/ods_imgs/ods_13/ods13.png'
 }
 
 export default function Slide(){
@@ -35,8 +35,8 @@ export default function Slide(){
         ods13, ods14, ods15
     ]
     const iconURL = [
-        './src/assets/icons/right.svg',
-        './src/assets/icons/left.svg'
+        '/assets/src/assets/icons/right.svg',
+        '/assets/src/assets/icons/left.svg'
     ]
     function upClick(){
         if(num > imageList.length -2) setNum(0);
