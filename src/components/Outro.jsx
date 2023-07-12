@@ -3,7 +3,7 @@ import {useState} from "react";
 export default function Outro(){
 
     const imageURL = [
-        '/assets/src/assets/Images.png'
+        '/src/assets/Images.png'
     ]
 
     const [email, setEmail] = useState('');

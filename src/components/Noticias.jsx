@@ -9,8 +9,9 @@ export default function Noticias(){
 
     return(
         <>
-            <div className={`mt-40
-                            sm:mt-20`}>
+            <div className={`
+                            sm:mt-20
+                            xl:mt-48`}>
                 <h1 className="text-black text-5xl font-semibold flex justify-center">Noticias</h1>
                 <div>
                     <a href="https://g1.globo.com/meio-ambiente/noticia/2023/06/29/o-po-magico-que-pode-ajudar-a-combater-as-mudancas-climaticas.ghtml"

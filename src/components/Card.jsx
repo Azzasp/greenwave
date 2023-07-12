@@ -16,7 +16,7 @@ export default function Card(){
             <div className={`w-full h-screen flex justify-center items-center absolute
                              md:-mt-[10rem] md:overflow-x-scroll
                              sm:-mt-[10rem] sm:overflow-x-scroll
-                             xl:mt-[10rem] xl:overflow-x-hidden
+                             xl:mt-[5rem] xl:overflow-x-hidden
                              2xl:-mt-[15rem]`}>
 
                     <div className={`group
