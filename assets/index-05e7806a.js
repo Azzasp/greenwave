@@ -56,17 +56,19 @@ promovendo medidas urgentes para preservar nosso planeta.
                             `,children:[g.jsx("div",{onClick:s,style:{backgroundImage:`url(${l.at(1)})`},className:"w-[25px] h-[25px] bg-cover bg-no-repeat bg-center left-0"}),g.jsx("div",{onClick:o,style:{backgroundImage:`url(${l.at(0)})`},className:"w-[25px] h-[25px] bg-cover bg-no-repeat bg-center right-0"})]}),g.jsx("div",{className:"flex justify-center items-center",children:g.jsx("h1",{className:`text-white text-7xl font-bold text-center
                                 absolute z-50
                                 sm:text-4xl sm:mt-[80rem]
-                                xl:mt-[40rem]`,children:i.at(e).title.split(`
+                                xl:mt-[40rem]
+                                2xl:mt-[80rem]`,children:i.at(e).title.split(`
 `).map((a,v)=>g.jsxs("span",{children:[a,g.jsx("br",{})]},v))})}),g.jsx("div",{children:g.jsx("p",{className:`text-white text-left
                                 absolute z-40 left-10
                                 sm:top-[50rem]
-                                xl:top-[28rem]`,children:i.at(e).text.split(`
+                                xl:top-[28rem]
+                                2xl:top-[50rem]`,children:i.at(e).text.split(`
 `).map((a,v)=>g.jsxs("span",{children:[a,g.jsx("br",{})]},v))})}),g.jsx("div",{className:`flex justify-center absolute  left-[37rem]
                             sm:left-[16rem] sm:top-[60rem]
                             md:left-[19rem]
                             lg:left-[27rem]
                             xl:top-[35rem] xl:left-[37rem]
-                            2xl:left-[42.5rem]`,children:g.jsx("a",{href:"#cards",className:"z-30",children:g.jsx("button",{onClick:"#cards",className:`h-8 w-36 outline outline-2 outline-white rounded-2xl\r
+                            2xl:top-[60rem] 2xl:left-[42.5rem]`,children:g.jsx("a",{href:"#cards",className:"z-30",children:g.jsx("button",{onClick:"#cards",className:`h-8 w-36 outline outline-2 outline-white rounded-2xl\r
                                 font-semibold text-white\r
                                 hover:bg-white hover:text-black transition-colors`,children:"EXPLORAR"})})}),g.jsxs("div",{children:[g.jsx("div",{className:"h-screen w-screen bg-black absolute z-10 opacity-40"}),u((a,v)=>g.jsx(pl.div,{style:{...a,backgroundImage:`url(${v.imageURL})`},className:"absolute w-screen h-screen bg-cover bg-no-repeat bg-center"}))]})]})}function nv(){return g.jsx(g.Fragment,{children:g.jsx("div",{className:"overflow-x-hidden m-0 p-0 z-[10]",children:g.jsx(tv,{})})})}function rv(){const e=["/src/assets/cards/colheita-acai.jpg","/src/assets/cards/jacare.jpg","./src/assets/cards/onda.jpg","./src/assets/cards/barco.jpg"];return g.jsx(g.Fragment,{children:g.jsxs("div",{className:`w-full h-screen flex justify-center items-center absolute
                              md:-mt-[10rem] md:overflow-x-scroll
@@ -92,10 +94,10 @@ promovendo medidas urgentes para preservar nosso planeta.
                                                 outline outline-3 outline-white rounded-xl placeholder-white
                                                 bg-transparent text-white text-center
                                                 sm:w-[480px]
-                                                lg:w-[600px]`}),g.jsx("div",{className:`ml-56
+                                                lg:w-[600px]`}),g.jsx("div",{className:`mt-10
                                             sm:ml-[10.5rem]
                                             lg:ml-[14.2rem]
-                                            xl:mt-10
+                                            xl:ml-56
                                             `,children:g.jsx("button",{type:"submit",className:`h-8 w-36 outline outline-2 outline-green-500 rounded font-semibold text-white
                                                 hover:bg-green-500 hover:text-white transition-colors`,children:"Cadastrar"})})]}),g.jsxs("p",{className:`text-white text-center mt-10
                                         sm:px-5`,children:["Na luta contra as mudanças climáticas e na proteção do nosso planeta cada ação conta. ",g.jsx("br",{}),"Assuma o compromisso de reduzir sua pegada de carbono, adotar práticas sustentáveis e",g.jsx("br",{}),"apoiar iniciativas ambientais."]})]}),g.jsx("div",{className:"bg-black w-full h-screen"})]})})})}function sv(){const e=["./src/assets/icons/awesome-github.svg","./src/assets/icons/awesome-linkedin.svg"];return g.jsx(g.Fragment,{children:g.jsxs("div",{className:"w-full h-[250px] bg-black flex justify-between items-center px-24",children:[g.jsxs("h1",{className:"text-white text-xl font-semibold",children:[" Green",g.jsx("span",{className:"text-green-500",children:"Wave"})]}),g.jsx("p",{className:`text-white text-center mt-28
