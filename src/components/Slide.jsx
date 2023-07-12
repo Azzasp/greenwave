@@ -70,7 +70,8 @@ export default function Slide(){
                 <h1 className={`text-white text-7xl font-bold text-center
                                 absolute z-50
                                 sm:text-4xl sm:mt-[80rem]
-                                xl:mt-[40rem]`}>
+                                xl:mt-[40rem]
+                                2xl:mt-[80rem]`}>
                     {imageList.at(num).title.split('\n').map((substring, index) => (
                         <span key={index}>
                             {substring}
@@ -83,7 +84,8 @@ export default function Slide(){
                 <p className={`text-white text-left
                                 absolute z-40 left-10
                                 sm:top-[50rem]
-                                xl:top-[28rem]`}>
+                                xl:top-[28rem]
+                                2xl:top-[50rem]`}>
                     {imageList.at(num).text.split('\n').map((substring, index) => (
                         <span key={index}>
                             {substring}
@@ -97,7 +99,7 @@ export default function Slide(){
                             md:left-[19rem]
                             lg:left-[27rem]
                             xl:top-[35rem] xl:left-[37rem]
-                            2xl:left-[42.5rem]`}>
+                            2xl:top-[60rem] 2xl:left-[42.5rem]`}>
                 <a href="#cards" className={`z-30`}>
                     <button onClick="#cards" className="h-8 w-36 outline outline-2 outline-white rounded-2xl
                                 font-semibold text-white

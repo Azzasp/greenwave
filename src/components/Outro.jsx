@@ -36,10 +36,10 @@ export default function Outro(){
                                                 sm:w-[480px]
                                                 lg:w-[600px]`}>
                             </input>
-                            <div className={`ml-56
+                            <div className={`mt-10
                                             sm:ml-[10.5rem]
                                             lg:ml-[14.2rem]
-                                            xl:mt-10
+                                            xl:ml-56
                                             `}>
                                 <button type="submit"
                                     className={`h-8 w-36 outline outline-2 outline-green-500 rounded font-semibold text-white
