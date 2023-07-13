@@ -6,7 +6,10 @@ import Outro from "./components/Outro.jsx";
 import Footer from "./components/Footer.jsx";
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
+
 function App() {
+
+
 
   return (
     <>
@@ -17,7 +20,7 @@ function App() {
                     <Hero></Hero>
                 </ParallaxLayer>
                 <ParallaxLayer offset={1} speed={0.1}>
-                    <Noticias></Noticias>
+                    <Noticias/>
                 </ParallaxLayer>
 
                 <ParallaxLayer offset={0.9999} speed={0.75}>

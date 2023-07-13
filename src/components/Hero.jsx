@@ -1,6 +1,7 @@
 import Slide from "./Slide.jsx";
 
 
+
 export default function Hero(){
 
     return(

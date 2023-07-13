@@ -1,5 +1,6 @@
 import {useState} from "react";
 import {useTransition, animated} from "@react-spring/web";
+import Acessibilidade from "./Acessibilidade.jsx";
 
 const ods15 = {
     title: 'VIDA SOBRE \n' + 'A TERRA',
@@ -30,6 +31,18 @@ export default function Slide(){
 
     const [num, setNum] = useState(0);
     const [index, setIndex] = useState(num)
+    const [titleFontSize, setTitleFontSize] = useState(24);
+    const [fontSize, setFontSize] = useState(12);
+
+    const increaseFontSize = () => {
+        setTitleFontSize((prevFontSize) => prevFontSize + 1);
+        setFontSize((prevFontSize) => prevFontSize + 1);
+    };
+
+    const decreaseFontSize = () => {
+        setTitleFontSize((prevFontSize) => prevFontSize - 1);
+        setFontSize((prevFontSize) => prevFontSize - 1);
+    };
 
     const imageList = [
         ods13, ods14, ods15
@@ -58,6 +71,11 @@ export default function Slide(){
 
     return(
         <>
+            <div className={`fixed z-[120]`}>
+                <Acessibilidade
+                    onIncreaseFontSize={increaseFontSize}
+                    onDecreaseFontSize={decreaseFontSize}>
+                </Acessibilidade></div>
             <div className={`absolute w-full top-1/2 px-10 z-50
                             flex justify-between justify-items-center
                             `}>
@@ -73,7 +91,7 @@ export default function Slide(){
                                 xl:mt-[40rem]
                                 2xl:mt-[80rem]`}>
                     {imageList.at(num).title.split('\n').map((substring, index) => (
-                        <span key={index}>
+                        <span key={index} style={{ fontSize: `${titleFontSize}px`}}>
                             {substring}
                             <br/>
                         </span>
@@ -87,7 +105,7 @@ export default function Slide(){
                                 xl:top-[28rem]
                                 2xl:top-[50rem]`}>
                     {imageList.at(num).text.split('\n').map((substring, index) => (
-                        <span key={index}>
+                        <span key={index} style={{ fontSize: `${fontSize}px`}}>
                             {substring}
                             <br />
                         </span>
