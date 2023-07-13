@@ -23,7 +23,7 @@ GreenWave é um projeto fictício desenvolvido como parte do curso de Ciência d
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](greenwave-screenshot.png)
 
 
 ## Instalação
